@@ -29,7 +29,7 @@ export default function RootLayout({
       <Head>
         <title>MovieHub</title>
       </Head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable}`} style={{ margin: 0 , backgroundColor: "#141414"}}>
         <Layout>
           {children}
         </Layout>

@@ -5,19 +5,32 @@ import { FB, Instagram, Twitter, Youtube } from '../../utils/icons'
 const Footer = () => {
   return (
     <Box
-    sx={{
-      backgroundColor: "#141414",
-      color: "rgba(255, 255, 255, 0.5)",
-      padding: "5r0 em 3rem 5rem",
-    }}
+      sx={{
+        backgroundColor: "#141414",
+        color: "rgba(255, 255, 255, 0.5)",
+        padding: "5r0 em 3rem 5rem",
+      }}
     >
-      <Box>
-        <FB />
-        <Instagram />
-        <Twitter />
-        <Youtube />
+      <Box
+        sx={{
+          display: { sm: "flex" },
+          color: "white",
+          flexDirection: { md: "row" },
+          gap: "3rem",
+          marginBottom: "1rem",
+        }}
+      >
+        <FB style={{ fontSize: "2rem" }} />
+        <Instagram style={{ fontSize: "2rem" }} />
+        <Twitter style={{ fontSize: "2rem" }} />
+        <Youtube style={{ fontSize: "2rem" }} />
       </Box>
-      <Box>
+      <Box
+      sx={{
+        display: { sm: "flex" },
+        justifyContent: { sm: "space-between" },
+      }}
+      >
         <Box>
           <Typography>Audio Description</Typography>
           <Typography>Investor Relationship</Typography>
@@ -42,7 +55,14 @@ const Footer = () => {
         </Box>
       </Box>
       <Box>
-        <Typography>Service Code</Typography>
+        <Typography
+          sx={{
+            borderBottom: "1px solid rgba(255, 255, 255, 0.5)",
+            padding: "0.2rem 0.4rem",
+            marginY: "2rem",
+            width: "7rem"
+          }}
+        >Service Code</Typography>
       </Box>
       <Box>2015-2024 MovieHub, Inc.</Box>
     </Box>
